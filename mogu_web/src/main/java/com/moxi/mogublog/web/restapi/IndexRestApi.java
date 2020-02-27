@@ -189,16 +189,16 @@ public class IndexRestApi {
         log.info("获取首页排行博客");
 
         //从Redis中获取内容
-        String jsonResult = stringRedisTemplate.opsForValue().get(SysConf.HOT_BLOG);
-
-        //判断redis中是否有文章
-        if (StringUtils.isNotEmpty(jsonResult)) {
-            List list = JsonUtils.jsonArrayToArrayList(jsonResult);
-            IPage pageList = new Page();
-            pageList.setRecords(list);
-            log.info("从Redis中返回最新博客");
-            return ResultUtil.result(SysConf.SUCCESS, pageList);
-        }
+//        String jsonResult = stringRedisTemplate.opsForValue().get(SysConf.HOT_BLOG);
+//
+//        //判断redis中是否有文章
+//        if (StringUtils.isNotEmpty(jsonResult)) {
+//            List list = JsonUtils.jsonArrayToArrayList(jsonResult);
+//            IPage pageList = new Page();
+//            pageList.setRecords(list);
+//            log.info("从Redis中返回最新博客");
+//            return ResultUtil.result(SysConf.SUCCESS, pageList);
+//        }
 
         QueryWrapper<Blog> queryWrapper = new QueryWrapper<>();
         Page<Blog> page = new Page<>();
@@ -234,16 +234,16 @@ public class IndexRestApi {
         // 只缓存第一页的内容
         if (currentPage == 1L) {
             //从Redis中获取内容
-            String jsonResult = stringRedisTemplate.opsForValue().get(SysConf.NEW_BLOG);
-
-            //判断redis中是否有文章
-            if (StringUtils.isNotEmpty(jsonResult)) {
-                log.info("从Redis中返回最新博客");
-                List list = JsonUtils.jsonArrayToArrayList(jsonResult);
-                IPage pageList = new Page();
-                pageList.setRecords(list);
-                return ResultUtil.result(SysConf.SUCCESS, pageList);
-            }
+//            String jsonResult = stringRedisTemplate.opsForValue().get(SysConf.NEW_BLOG);
+//
+//            //判断redis中是否有文章
+//            if (StringUtils.isNotEmpty(jsonResult)) {
+//                log.info("从Redis中返回最新博客");
+//                List list = JsonUtils.jsonArrayToArrayList(jsonResult);
+//                IPage pageList = new Page();
+//                pageList.setRecords(list);
+//                return ResultUtil.result(SysConf.SUCCESS, pageList);
+//            }
         }
         QueryWrapper<Blog> queryWrapper = new QueryWrapper<>();
         Page<Blog> page = new Page<>();
