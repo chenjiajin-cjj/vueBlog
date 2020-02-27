@@ -7,7 +7,7 @@
 
       <span class="right p1">
         <div class="rightTop">
-          <el-link class="userName" :underline="false">陌溪</el-link>
+          <el-link class="userName" :underline="false">陈晨_</el-link>
           <span class="timeAgo">4天前</span>
         </div>
         <div class="rightCenter">
