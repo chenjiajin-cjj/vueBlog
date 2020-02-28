@@ -68,8 +68,8 @@
         if(!isLogin) {
 
           this.$notify.error({
-            title: '警告',
-            message: '登录后才可以评论哦~',
+            title: 'hey~~',
+            message: '等我把登录做好，你再来评论好嘛',
             offset: 100
           });
           return;
@@ -77,7 +77,7 @@
 
         if(this.value =="") {
           this.$notify.error({
-            title: '警告',
+            title: 'yo~',
             message: '评论内容不能为空哦~',
             offset: 100
           });

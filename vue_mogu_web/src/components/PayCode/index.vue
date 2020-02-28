@@ -6,9 +6,10 @@
         (<b id="diggnum">{{praiseCount}}</b>)
       </span>
     </p>
-    <p class="dasbox">
-      <a href="javascript:void(0)" @click="dashangToggle()" class="dashang" title="打赏，支持一下">打赏本站</a>
-    </p>
+    <!--打赏的按钮显示-->
+<!--    <p class="dasbox" style="display: block;">-->
+<!--      <a href="javascript:void(0)" @click="dashangToggle()" class="dashang" title="打赏，支持一下">打赏本站</a>-->
+<!--    </p>-->
     <div class="hide_box" v-if="showPay"></div>
     <div class="shang_box" v-if="showPay">
       <a class="shang_close" href="javascript:void(0)" @click="dashangToggle()" title="关闭">关闭</a>

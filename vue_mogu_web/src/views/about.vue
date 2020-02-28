@@ -13,7 +13,6 @@
         <a href="/" class="n2">关于我</a>
       </h1>
       <div class="news_infos">
-
         <div
           class="news_con fixck newsview ck-content"
           v-html="info.personResume"

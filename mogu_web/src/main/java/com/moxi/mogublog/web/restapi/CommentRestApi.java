@@ -189,6 +189,7 @@ public class CommentRestApi {
         if(SysConf.CAN_NOT_COMMENT.equals(webConfig.getStartComment())) {
             return ResultUtil.result(SysConf.ERROR, MessageConf.NO_COMMENTS_OPEN);
         }
+        //评论校验
         ThrowableUtils.checkParamArgument(result);
 
         if (commentVO.getContent().length() > SysConf.TWO_TWO_FIVE) {
@@ -205,7 +206,6 @@ public class CommentRestApi {
         comment.insert();
 
         User user = userService.getById(commentVO.getUserUid());
-
         //获取图片
         if (StringUtils.isNotEmpty(user.getAvatar())) {
             String pictureList = this.pictureFeignClient.getPicture(user.getAvatar(), SysConf.FILE_SEGMENTATION);

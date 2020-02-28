@@ -151,7 +151,7 @@
         toInfo: {},
         userInfo: {},
         blogUid: null, //传递过来的博客uid
-        blogData: null,
+        blogData: null,//文章底下的的版权声明
         sameBlogData: [], //相关文章
         linkData: [], //友情链接
         dialogPictureVisible: false,

@@ -89,7 +89,7 @@ public class CreatCodeRestApi {
                         "</div>\r\n" +
                         "<div class=\"panel-body\">\r\n" +
                         "<p>您好 <a href=\"mailto:" + moguBlogEmail + "\" rel=\"noopener\" target=\"_blank\">" + info + "<wbr></a>！</p>\r\n" +
-                        "<p>欢迎注册蘑菇博客，请将验证码填写到注册页面。</p>\r\n" +
+                        "<p>欢迎注册陈晨博客，请将验证码填写到注册页面。</p>\r\n" +
                         "<p>验证码：" + code + "</p>\r\n" +
                         "\r\n" +
                         "</div>\r\n" +

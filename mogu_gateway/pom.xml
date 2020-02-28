@@ -8,7 +8,7 @@
     </parent>
     <artifactId>mogu_gateway</artifactId>
     <name>mogu_gateway</name>
-    <description>蘑菇博客API网关</description>
+    <description>陈晨博客API网关</description>
 
     <properties>
         <java.version>1.8</java.version>
