@@ -4,7 +4,7 @@ server:
 
 #阿里大于
 templateCode: SMS_XXXXXX #短信模板编号
-signName: 丑人Blog
+signName: 无脸男Blog
 PROJECT_NAME_EN: moguBlog
 
 data:

@@ -47,7 +47,7 @@ export default {
   name: "Head",
   head() {
     return {
-      title: "丑人Blog - 专注于技术分享的博客平台",
+      title: "无脸男Blog - 专注于技术分享的博客平台",
       meta: [
         { charset: "utf-8" },
         {
