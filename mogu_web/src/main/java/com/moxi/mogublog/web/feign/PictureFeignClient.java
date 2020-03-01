@@ -27,7 +27,7 @@ public interface PictureFeignClient {
      * @ApiImplicitParam(name = "code", value = "分割符", required = false, dataType = "String")
      */
     @RequestMapping(value = "/file/getPicture", method = RequestMethod.GET)
-    public String getPicture(@RequestParam("fileIds") String fileIds, @RequestParam("code") String code);
+    String getPicture(@RequestParam("fileIds") String fileIds, @RequestParam("code") String code);
 
     /**
      * 通过URL List上传图片
@@ -36,8 +36,8 @@ public interface PictureFeignClient {
      * @return
      */
     @RequestMapping(value = "/file/uploadPicsByUrl2", method = RequestMethod.POST)
-    public String uploadPicsByUrl(FileVO fileVO);
+    String uploadPicsByUrl(FileVO fileVO);
 
     @RequestMapping(value = "/file/hello", method = RequestMethod.GET)
-    public String hello();
+    String hello();
 }

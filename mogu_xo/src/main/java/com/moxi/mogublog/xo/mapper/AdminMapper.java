@@ -19,5 +19,5 @@ public interface AdminMapper extends SuperMapper<Admin> {
      *
      * @return
      */
-    public Admin getAdminByUid(@Param("uid") String uid);
+    Admin getAdminByUid(@Param("uid") String uid);
 }
