@@ -73,8 +73,8 @@
       replyTo: function (item) {
         if(!this.validLogin()) {
           this.$notify.error({
-            title: '错误',
-            message: "登录后才能回复评论哦~",
+            title: '看这里~',
+            message: "我还没开放这个功能呢~",
             offset: 100
           });
           return
@@ -120,7 +120,7 @@
               });
             } else {
               this.$notify.error({
-                title: '错误',
+                title: '看这里~',
                 message: "评论失败",
                 type: 'success',
                 offset: 100
@@ -162,8 +162,8 @@
       report: function (item) {
         if(!this.validLogin()) {
           this.$notify.error({
-            title: '错误',
-            message: "登录后才能举报评论哦~",
+            title: '看这里~',
+            message: "我还没开放这个功能呢~",
             offset: 100
           });
           return
@@ -172,7 +172,7 @@
 
         if(userUid == item.userUid) {
           this.$notify.error({
-            title: '错误',
+            title: '看这里~',
             message: "不能举报自己的评论哦~",
             offset: 100
           });
@@ -192,7 +192,7 @@
             });
           } else {
             this.$notify.error({
-              title: '错误',
+              title: '看这里~',
               message: response.data,
               type: 'success',
               offset: 100
@@ -203,8 +203,8 @@
       delComment: function (item) {
         if(!this.validLogin()) {
           this.$notify.error({
-            title: '错误',
-            message: "登录后才能删除评论哦~",
+            title: '看这里~',
+            message: "我还没开放这个功能呢~",
             offset: 100
           });
           return
@@ -225,7 +225,7 @@
 
           } else {
             this.$notify.error({
-              title: '错误',
+              title: '看这里~',
               message: "删除失败",
               type: 'success',
               offset: 100

@@ -4,7 +4,7 @@
       <img :src="dialogImageUrl" alt="dialogImageUrl" style="margin: 0 auto;">
     </el-dialog>
     <h1 class="t_nav">
-      <a href="/" class="n1">网站首页</a>
+      <a href="/" class="n1">网站首页</a><!-- 展示文章详情 -->
       <a
         href="javascript:void(0);"
         v-if="blogData.blogSort.uid"
@@ -227,7 +227,7 @@
               });
             } else {
               this.$notify.error({
-                title: '错误',
+                title: '看这里~',
                 message: response.data,
                 offset: 100
               });

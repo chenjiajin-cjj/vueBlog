@@ -72,7 +72,7 @@
               });
             } else {
               this.$notify.error({
-                title: '错误',
+                title: '看这里~',
                 message: "发表失败，请稍后再试",
                 offset: 100
               });

@@ -65,15 +65,14 @@
         let info = this.$store.state.user.userInfo
         let isLogin = this.$store.state.user.isLogin
         console.log("是否登录", isLogin);
-        if(!isLogin) {
-
-          this.$notify.error({
-            title: 'hey~~',
-            message: '等我把登录做好，你再来评论好嘛',
-            offset: 100
-          });
-          return;
-        }
+        // if(!isLogin) {
+        //   this.$notify.error({
+        //     title: 'hey~~',
+        //     message: '等我把登录做好，你再来评论好嘛',
+        //     offset: 100
+        //   });
+        //   return;
+        // }
 
         if(this.value =="") {
           this.$notify.error({

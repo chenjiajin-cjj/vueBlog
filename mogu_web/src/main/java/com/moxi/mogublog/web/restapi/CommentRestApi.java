@@ -190,7 +190,7 @@ public class CommentRestApi {
             return ResultUtil.result(SysConf.ERROR, MessageConf.NO_COMMENTS_OPEN);
         }
         //评论校验
-        ThrowableUtils.checkParamArgument(result);
+//        ThrowableUtils.checkParamArgument(result);
 
         if (commentVO.getContent().length() > SysConf.TWO_TWO_FIVE) {
             return ResultUtil.result(SysConf.ERROR, MessageConf.COMMENT_CAN_NOT_MORE_THAN_225);
@@ -204,8 +204,11 @@ public class CommentRestApi {
         comment.setToUserUid(commentVO.getToUserUid());
         comment.setStatus(EStatus.ENABLE);
         comment.insert();
-
-        User user = userService.getById(commentVO.getUserUid());
+        //下面这个是原本的登录校验方式
+//        User user = userService.getById(commentVO.getUserUid());
+        User user = userService.getById("379f4b1d9818b2b0269ea0d1c49177a5");
+        user.setNickName("我叫名字");
+        user.setUserName("我叫名字");
         //获取图片
         if (StringUtils.isNotEmpty(user.getAvatar())) {
             String pictureList = this.pictureFeignClient.getPicture(user.getAvatar(), SysConf.FILE_SEGMENTATION);

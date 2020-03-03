@@ -202,7 +202,7 @@
       search: function () {
         if (this.keyword == "" || this.keyword.trim() == "") {
           this.$notify.error({
-            title: '错误',
+            title: '看这里~',
             message: "关键字不能为空",
             type: 'success',
             offset: 100

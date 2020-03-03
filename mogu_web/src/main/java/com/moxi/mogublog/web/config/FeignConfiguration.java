@@ -1,9 +1,13 @@
 package com.moxi.mogublog.web.config;
 
+import com.alibaba.fastjson.JSONObject;
 import feign.auth.BasicAuthRequestInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -16,20 +20,6 @@ public class FeignConfiguration {
         return new BasicAuthRequestInterceptor("user", "password123");
     }
 
-    public static void main(String[] args) throws Exception{
 
-        List<String> phone = new ArrayList<>();
-        phone.add("11");
-        phone.add("22");
-        phone.add("33");
-
-        Random random = new Random();
-        while (true){
-
-            String t = phone.get(random.nextInt(phone.size()));
-            System.out.println(t);
-            Thread.sleep(1000);
-        }
-    }
 
 }
