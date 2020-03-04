@@ -10,16 +10,16 @@ PROJECT_NAME_EN: moguBlog
 data:
   # 门户页面
   webSite:
-    url: http://localhost:9527/#/
+    url: http://118.190.58.118:9527/#/
   # mogu_web网址，用于第三方登录回调
   web:
-    url: http://127.0.0.1:8603
+    url: http://118.190.58.118:8603
   # 静态资源映射，通过nginx
   image:
-    url: http://localhost:8600/
+    url: http://118.190.58.118:8600/
 file:
   upload:
-    path: C:/mogu_blog/data/
+    path: /home/mogu_blog/mogu_data/
 
 #博客相关配置
 BLOG:
@@ -53,7 +53,7 @@ spring:
   # DATABASE CONFIG
   datasource:
     username: root
-    password: Aa@111111
+    password: mogu2018
     url: jdbc:mysql://118.190.58.118:3306/mogu_blog?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&useSSL=false&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource

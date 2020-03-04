@@ -5,10 +5,10 @@ server:
 #Data image url
 data:
   image:
-    url: http://localhost:8600/
+    url: http://118.190.58.118:8600/
 file:
   upload:
-    path: C:/mogu_blog/data/
+    path: /home/mogu_blog/mogu_data/
 
 
 #spring
@@ -54,7 +54,7 @@ spring:
   # DATABASE CONFIG
   datasource:
     username: root
-    password: Aa@111111
+    password: mogu2018
     url: jdbc:mysql://118.190.58.118:3306/mogu_picture?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&useSSL=false&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
