@@ -8,10 +8,10 @@ module.exports = {
   // WEB_API: '"http://101.132.194.128:8603"',
 
   //配置线上环境
-  VUE_MOGU_WEB: '"http://www.moguit.cn"',
-  WEB_API: '"http://101.132.194.128:8603"',
+  VUE_MOGU_WEB: '"http://localhost"',
+  WEB_API: '"http://localhost:8603"',
   PICTURE_HOST: '""',
-  ELASTICSEARCH: '"http://101.132.194.128:8605"',
+  ELASTICSEARCH: '"http://localhost:8605"',
 
   // 配置测试环境
   // WEB_API: '"http://192.168.1.101:8603"',
