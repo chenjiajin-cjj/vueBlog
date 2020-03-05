@@ -55,7 +55,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true,
       favicon: resolve('favicon.ico'),
-      title: '陈晨啊哟后台管理系统',
+      title: '陈晨后台管理系统',
       minify: {
         removeComments: true,
         collapseWhitespace: true,

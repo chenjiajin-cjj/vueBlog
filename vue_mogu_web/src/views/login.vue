@@ -7,7 +7,7 @@
 
       <span class="right p1">
         <div class="rightTop">
-          <el-link class="userName" :underline="false">陈晨啊哟</el-link>
+          <el-link class="userName" :underline="false">陈晨</el-link>
           <span class="timeAgo">4天前</span>
         </div>
         <div class="rightCenter">
@@ -27,7 +27,7 @@
 
             <span class="right p1">
               <div class="rightTop">
-                <el-link class="userName" :underline="false">陈晨啊哟</el-link>
+                <el-link class="userName" :underline="false">陈晨</el-link>
                 <span class="timeAgo">4天前</span>
               </div>
               <div class="rightCenter">

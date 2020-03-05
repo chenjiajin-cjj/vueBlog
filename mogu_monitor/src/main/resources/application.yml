@@ -11,8 +11,8 @@ spring:
   boot:
     admin:
       ui:
-        title: 陈晨啊哟博客监控中心
-        brand: 陈晨啊哟博客监控中心
+        title: 陈晨博客监控中心
+        brand: 陈晨博客监控中心
       notify:
         mail:
           enabled: false
