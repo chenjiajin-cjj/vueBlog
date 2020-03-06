@@ -10,6 +10,7 @@ PROJECT_NAME_EN: moguBlog
 data:
   # 门户页面
   webSite:
+    #线上环境
     url: http://118.190.58.118:9527/#/
   # mogu_web网址，用于第三方登录回调
   web:

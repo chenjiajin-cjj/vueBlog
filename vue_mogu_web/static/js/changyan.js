@@ -36,7 +36,8 @@
         c.appendChild(b);
       };
       //线上环境
-      loadJs("localhost:8600/blog/resource/java/Chanyan/changyan.js", function() {
+      loadJs("118.190.58.118:8600/blog/resource/java/Chanyan/changyan.js", function() {
+      // loadJs("localhost:8600/blog/resource/java/Chanyan/changyan.js", function() {
       // loadJs("//101.132.194.128:8600/blog/resource/java/Chanyan/changyan.js", function() {
         window.changyan.api.config({ appid: appid, conf: conf });
       });

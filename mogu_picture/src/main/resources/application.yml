@@ -3,6 +3,7 @@ server:
   port: 8602
 
 #Data image url
+#线上环境
 data:
   image:
     url: http://118.190.58.118:8600/
