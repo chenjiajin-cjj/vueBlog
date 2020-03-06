@@ -13,7 +13,9 @@ module.exports = {
   EUREKA_API: '"http://118.190.58.118:8761"',
   RABBIT_MQ_ADMIN: '"http://118.190.58.118:15672"',
   DRUID_ADMIN: '"http://118.190.58.118:8601/druid/login.html"',
-  BLOG_WEB_URL: '"http://118.190.58.118"',
+  // BASE_IMAGE_URL: '"http://118.190.58.118:8600"',
+  BASE_IMAGE_URL: '""',
+  BLOG_WEB_URL: '"http://118.190.58.118:9527"',
   // ADMIN_API: '"http://localhost:8601"',
   // PICTURE_API: '"http://localhost:8602"',
   // WEB_API: '"http://localhost:8603"',
@@ -26,7 +28,7 @@ module.exports = {
   // DRUID_ADMIN: '"http://localhost:8601/druid/login.html"',
   // BLOG_WEB_URL: '"http://localhost"',
   // 使用七牛云，不需要添加图片前缀
-  BASE_IMAGE_URL: '""',
+
 
 
   // ADMIN_API: '"http://101.132.194.128:8601"',
