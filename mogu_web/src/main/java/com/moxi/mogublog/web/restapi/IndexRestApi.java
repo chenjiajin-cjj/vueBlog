@@ -90,15 +90,15 @@ public class IndexRestApi {
                                  @ApiParam(name = "useSort", value = "使用排序", required = false) @RequestParam(name = "useSort", required = false, defaultValue = "0") Integer useSort) {
 
         //从Redis中获取内容
-        String jsonResult = stringRedisTemplate.opsForValue().get("BOLG_LEVEL:" + level);
-
-        //判断redis中是否有文章
-        if (StringUtils.isNotEmpty(jsonResult)) {
-            List list = JsonUtils.jsonArrayToArrayList(jsonResult);
-            IPage pageList = new Page();
-            pageList.setRecords(list);
-            return ResultUtil.result(SysConf.SUCCESS, pageList);
-        }
+//        String jsonResult = stringRedisTemplate.opsForValue().get("BOLG_LEVEL:" + level);
+//
+//        //判断redis中是否有文章
+//        if (StringUtils.isNotEmpty(jsonResult)) {
+//            List list = JsonUtils.jsonArrayToArrayList(jsonResult);
+//            IPage pageList = new Page();
+//            pageList.setRecords(list);
+//            return ResultUtil.result(SysConf.SUCCESS, pageList);
+//        }
         Page<Blog> page = new Page<>();
         page.setCurrent(currentPage);
         switch (level) {
