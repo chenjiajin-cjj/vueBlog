@@ -24,13 +24,13 @@
 
         <el-row class="elRow">
           <el-tooltip content="码云" placement="bottom">
-            <el-button type="danger" circle @click="goAuth('gitee')">
+            <el-button type="danger" circle disabled>
               <span class="iconfont">&#xe602;</span>
             </el-button>
           </el-tooltip>
 
           <el-tooltip content="Github" placement="bottom">
-            <el-button type="info" circle @click="goAuth('github')">
+            <el-button type="info" circle disabled>
               <span class="iconfont">&#xe64a;</span>
             </el-button>
           </el-tooltip>
@@ -48,7 +48,7 @@
           </el-tooltip>
 
         </el-row>
-        <div class="loginTip">目前仅支持码云和Github登录</div>
+        <div class="loginTip">目前啥都不支持，别白费劲</div>
       </el-form>
     </div>
 
