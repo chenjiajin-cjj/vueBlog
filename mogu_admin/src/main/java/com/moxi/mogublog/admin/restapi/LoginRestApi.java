@@ -123,7 +123,7 @@ public class LoginRestApi {
                 roleName.toString(),
                 audience.getClientId(),
                 audience.getName(),
-                expiration * 1000,
+                expiration * 10000,
                 audience.getBase64Secret());
         String token = tokenHead + jwtToken;
         Map<String, Object> result = new HashMap<>();
